@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,64 @@
     <link rel="stylesheet" href="_estilos/general.css">
     <link rel="stylesheet" href="_estilos/styles.css">
 </head>
+<script language="javascript" src="_js/functions.js"></script>
+
 <body>
-    
-    My Devs
+    <header>
+        <img src="_imagens/background_header.jpg" id="bgheader" />
 
-    - Home
-    - Python
-    - Java
-    - HTML5/CSS3
+        <hgroup>
+            <p>My Devs</p>
+            <p>Site Last Update:</br>2020, June 22<sup>nd</sup></p>
+        </hgroup>
+        
+        <img src="_imagens/myself.jpg" alt="my picture" id="picture" />
 
+        <nav id="menuflutuante">
+            <ul id="menu">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/myself.jpg')"><a
+                        href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/python.jpg')" onmouseout="mudaFoto('_imagens/myself.jpg')"><a
+                        href="mainPython.html">Python</a></li>
+                <li onmouseover="mudaFoto('_imagens/java.jpg')" onmouseout="mudaFoto('_imagens/myself.jpg')"><a
+                        href="mainJava.html">Java</a></li>
+                <li onmouseover="mudaFoto('_imagens/html5css3js.jpg')" onmouseout="mudaFoto('_imagens/myself.jpg')"><a
+                        href="mainHtml5Css3JS.html">HTML5/CSS3</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <p>This is my personal site with my developments that have been done during my studies and my own needs to solve any
+        problem.</p>
 
-    Site Last Update:
-    This is my personal site with my developments. These developments have been done during my studies and my own needs to solve any problem.
+    <p>About me:</p>
+    <p>I'm a Mechatronic Engineer (2001) and Master in Aeronautical Engineer (2004).
+        I have worked on aeronautical industry since 2003 as "System Integration Test Engineer". Nowadays my field of
+        work is engine and its controller (FADEC) integration tests on RIGs. I'm very experienced on software test on
+        simulated environment with real components (HIL) to validate and to verify how the system and its interfaces
+        would behave in normal, failed and out of envelope conditions. These activities demmand wide knowlodge on
+        <b>"ARP4754"</b> and <b>"System Engineer"</b> concepts.</p>
+    <p>This field of work makes me present on the aircraft entire lifecycle, from initial definition, Type
+        certification, entry-into-service and fleet support.</p>
 
-    About me:
-    I'm a Mechatronic Engineer (2001) and Master in Aeronautical Engineer (2004).
-    I have worked on aeronautical industry since 2003 as "System Integration Test Engineer". Nowadays my field of work is engine and its controller integration tests on  RIGs. I'm very experienced on software test on simulated environment with real components (HIL) to validate and to verify how the system and its interfaces would behave in normal, failed and out of envelope conditions. These activities demmand wide knowlodge on "ARP4754" and "System Engineer" concepts.
-    This field of work makes me present on the aircraft entire lifecycle, from initial definition, Type certification, entry-into-service and fleet support.
+    <p>On this site, my intention is to have a place to store and share my developments and knowlodge on the
+        computational field.</p>
 
-    On this site, my intention is to have a place to store and share my developments and knowlodge on the computational field. 
-    
-    I have scripted for a long time and I've tryed different languages but I'm confident using Python (2.7 and 3) that I've used on my work (creating scripts for test automation and test analysis) and my personal stuffs since 2008. 
+    <p>I have scripted for a long time and I've tryed different languages but I'm confident using <a
+            href="mainPython.html">Python</a> (2.7 and 3)
+        that I've used on my work (creating scripts for test automation and test analysis) and my personal stuffs since
+        2008.</p>
 
-    During the quarentine, forced by COVID-19 (a few months on 2020), I decided to improve my Python skills besides of adding the Java and the set HTML5/CSS3/JavaScript to my portfolio.
+    <p>During the quarentine, forced by COVID-19 (a few months on 2020), I decided to improve my <a
+            href="mainPython.html">Python</a> skills besides
+        of adding the <a href="mainJava.html">Java</a> and the set <a href="mainHtml5Css3JS.html">HTML5/CSS3</a> to my
+        portfolio.</p>
 
-    Cássio Henrique Mendonça
-    LinkedIn | GitHub
-    
-    <main>
-        <header>
-            <h1>CLICK ON SOFTWARE IMAGE</h1>
-        </header>
-        <article>
-            <p><a href="mainPython.html"><img class="lado" src="_imagens/_python/python.png" alt="Java"></a></p>
-            <p></p>
-        </article>
-        <article>
-            <p><a href="mainJava.html"><img class="lado" src="_imagens/_java/java.png" alt="Java"></a></p>
-        </article>
-        <article>
-            <p><a href="mainHtml5Css3JS.html"><img class="lado" src="_imagens/_html5css3js/html5css3js.jpg" alt="Java"></a></p>
-        </article>
-
-        <p>"This site is under construction and it has been continously improved".</p>
-    </main>
+    <footer id="rodape">
+        <p><b>Cássio Henrique Mendonça</b></br>
+            <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
+                href="https://github.com/chmendonca" target="blank">GitHub</a></p>
+    </footer>
 </body>
+
 </html>
