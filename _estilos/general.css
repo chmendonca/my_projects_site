@@ -19,10 +19,6 @@ p{
     text-align: justify;
     text-indent: 50px;
 }
-p#about{
-    text-decoration: underline;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
 a{
     text-decoration: none;
     color: #606060;
@@ -86,10 +82,14 @@ section#principal{
     width: 1000px;
     margin-top: 200px;
 }
-section#aboutme, section#aboutsite{
+article#about{
     display: block;
     width: 950px;
     margin: 0px auto auto auto;
+}
+article#about h3{
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 footer#rodape{
     clear: both;
