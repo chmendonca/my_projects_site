@@ -1,0 +1,111 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fontes/bubblegum-sans-regular.otf");
+}
+body{
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+p{
+    font-size: 11pt;
+    text-align: justify;
+    text-indent: 50px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: #888888;
+}
+a:hover{
+    text-decoration: underline;
+}
+div#interface{
+    width: 980px;
+    margin: auto;
+    height: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+header#cabecalho{
+    display: block;
+    font-size: 12pt;
+}
+header#cabecalho h1{
+    position: absolute;
+    font-family: "FonteLogo";
+    font-size: 36pt;
+    color: #888888;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+header#cabecalho h2{
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10pt;
+    color: #888888;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+header#cabecalho img#bgheader{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-bottom: 1px solid #606060;
+}
+header#cabecalho img#picture{
+    position: absolute;
+    margin: 25px auto auto 800px;
+}
+nav#menuflutuante{
+    display: block;
+    font-size: 12pt;
+}
+nav#menuflutuante ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 800px;
+}
+nav#menuflutuante li{
+    display: inline-block;
+    background-color: #cecece;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s; 
+}
+nav#menuflutuante li:hover{
+    background-color: #ffffff;
+}
+div#principal{
+    margin-top: 150px;
+}
+div#principal h1{
+    font-family: "FonteLogo";
+    font-size: 36pt;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+div#principal h2{
+    text-decoration: none;
+    color: black;
+    font-size: 12pt;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #888888;
+}
+div#principal h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18pt;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+footer#rodape{
+    margin-top: 0px;
+    border-top: #606060 solid 1px;
+}
+footer#rodape p{
+    text-align: center;
+}

@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHM</title>
+    <link rel="stylesheet" href="_estilos/general.css" />
 </head>
+<script language="javascript" src="_js/functions.js"></script>
 
 <body>
-    <header>
-        <h1>My Devs</h1>
-        <h1>Site Last Update: 2020, June 22<sup>nd</sup></h1>
-
-        [insert a picture]
-        - Home
-        - Python
-        - Java
-        - HTML5/CSS3
-    </header>
-    <div>
-        <h3>About me:</h3>
-        <p>I'm a Mechatronic Engineer (2001) and Master in Aeronautical Engineer (2004). I have worked on aeronautical
-            industry since 2003 as "System Integration Test Engineer". Nowadays, I have worked with system integration
-            tests on RIG with main focus on engine and its controller (FADEC). I'm very experienced on software test on
-            simulated environment with real controllers/components (HIL) to validate and to verify how the system and
-            its interfaces would behave in normal, failed and out of envelope conditions. These activities demmand wide
-            knowlodge on "ARP4754" and "System Engineer" directrices.</p>
-        <p>This field of work makes me present on the aircraft entire lifecycle, from initial definition, Type
-            Certification, entry-into-service and fleet support.</p>
-        <h3>About this site:</h3>
-        <p>My intention is to have a place to store and share my developments and knowledge.</p>
-        <p>I have scripted for a long time and I've tryed different languages but I'm confident using <a
-                href="">Python</a> (2.7 and 3) that I've used on my daily work (creating scripts for test automation and
-            test analysis) and my personal stuffs since 2008.</p>
-        <p>During the quarentine, forced by COVID-19 (a few months on 2020), I decided to improve my <a
-                href="">Python</a> skills besides of adding the <a href="">Java</a> and the set <a
-                href="">HTML5/CSS3</a> to my portfolio.</p>
-
-
+    <div id="interface">
+        <header id="cabecalho">
+            <img id="bgheader" src="_imagens/background_header.jpg" />
+            <img id="picture" src="_imagens/myself.jpg" alt="languageLogo">
+            <hgroup>
+                <h1>My Devs</h1>
+                <h2>Site Last Update: 2020, June 26<sup>th</sup></h2>
+            </hgroup>
+            <nav id="menuflutuante">
+                <ul id="menu">
+                    <li onmouseover="mudaFoto('_imagens/myself.jpg')" onmouseout="mudaFoto('_imagens/myself.jpg')"><a
+                            href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/_python/python.jpg')"
+                        onmouseout="mudaFoto('_imagens/myself.jpg')"><a href="mainPython.html">Python</a></li>
+                    <li onmouseover="mudaFoto('_imagens/_java/java.jpg')" onmouseout="mudaFoto('_imagens/myself.jpg')">
+                        <a href="mainJava.html">Java</a></li>
+                    <li onmouseover="mudaFoto('_imagens/_html5css3/html5css3.jpg')"
+                        onmouseout="mudaFoto('_imagens/myself.jpg')"><a href="mainHtml5Css3.html">HTML5/CSS3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="principal">
+            <h3>About me:</h3>
+            <p>I'm a Mechatronic Engineer (2001) and Master in Aeronautical Engineer (2004). I have worked on
+                aeronautical
+                industry since 2003 as "System Integration Test Engineer". Nowadays, I have worked with system
+                integration
+                tests on RIG with main focus on engine and its controller (FADEC). I'm very experienced on software test
+                on
+                simulated environment with real controllers/components (HIL) to validate and to verify how the system
+                and
+                its interfaces would behave in normal, failed and out of envelope conditions. These activities demmand
+                wide
+                knowlodge on <span style="font-weight: bold;">"ARP4754"</span> and <span
+                    style="font-weight: bold;">"System
+                    Engineer"</span> directrices.</p>
+            <p>This field of work makes me present on the aircraft entire lifecycle, from initial definition, Type
+                Certification, entry-into-service and fleet support.</p>
+            <h3>About this site:</h3>
+            <p>My intention is to have a place to store and share my developments and knowledge.</p>
+            <p>I have scripted for a long time and I've tryed different languages but I'm confident using <a
+                    href="mainPython.html">Python</a> (2.7 and 3) that I've used on my daily work (creating scripts for
+                test
+                automation and
+                test analysis) and my personal stuffs since 2008.</p>
+            <p>During the quarentine, forced by COVID-19 (a few months on 2020), I decided to improve my <a
+                    href="mainPython.html">Python</a> skills besides of adding the <a href="mainJava.html">Java</a> and
+                the
+                set <a href="mainHtml5Css3.html">HTML5/CSS3</a> to my portfolio.</p>
+        </div>
+        <footer id="rodape">
+            <p><b>Cássio Henrique Mendonça</b></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
+                    ref="https://github.com/chmendonca" target="blank">GitHub</a></p>
+        </footer>
     </div>
-    <footer>
-        Cássio Henrique Mendonça
-        LinkedIn | GitHub
-    </footer>
-
 </body>
 
 </html>
