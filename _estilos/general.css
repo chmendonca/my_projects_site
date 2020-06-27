@@ -17,7 +17,8 @@ p{
 }
 a{
     text-decoration: none;
-    color: #888888;
+    font-weight: bold;
+    color: #606060;
 }
 a:hover{
     text-decoration: underline;
