@@ -10,13 +10,13 @@
 <script language="javascript" src="_js/functions.js"></script>
 <body>
     <div id="interface">
-    <header id="cabecalho">
-        <img id="bgheader" src="_imagens/background_header.jpg" />
-        <img id="picture" src="_imagens/_html5css3/html5css3.jpg" alt="languageLogo">
-        <hgroup>
-        <h1>My Devs</h1>
-        <h2>Site Last Update: 2020, June 26<sup>th</sup></h2>
-    </hgroup>
+        <header id="cabecalho">
+            <img id="bgheader" onload ="atualizaData()" src="_imagens/background_header.jpg" />
+            <img id="picture" src="_imagens/_html5css3/html5css3.jpg" alt="languageLogo">
+            <hgroup>
+                <h1>My Devs</h1>
+                <h2 id="updatedDate"></h2>
+            </hgroup>
     <nav id="menuflutuante">
         <ul id="menu">
             <li onmouseover="mudaFoto('_imagens/myself.jpg')" onmouseout="mudaFoto('_imagens/_html5css3/html5css3.jpg')"><a href="index.html">Home</a></li>

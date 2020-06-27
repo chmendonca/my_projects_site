@@ -9,42 +9,71 @@
     <link rel="stylesheet" href="../../_estilos/hints.css" />
 </head>
 <script language="javascript" src="../../_js/functions.js"></script>
+
 <body>
     <div id="interface">
-    <header id="cabecalho">
-        <img id="bgheader" src="../../_imagens/background_header.jpg" />
-        <img id="picture" src="../../_imagens/_html5css3/html5css3.jpg" alt="languageLogo">
-        <hgroup>
-        <h1>My Devs</h1>
-        <h2>Site Last Update: 2020, June 26<sup>th</sup></h2>
-    </hgroup>
-    <nav id="menuflutuante">
-        <ul id="menu">
-            <li onmouseover="mudaFoto('../../_imagens/myself.jpg')" onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a href="../../index.html">Home</a></li>
-            <li onmouseover="mudaFoto('../../_imagens/_python/python.jpg')" onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a href="../../mainPython.html">Python</a></li>
-            <li onmouseover="mudaFoto('../../_imagens/_java/java.jpg')" onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a href="../../mainJava.html">Java</a></li>
-            <li onmouseover="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')" onmouseout="mudaFoto(../../'_imagens/_html5css3/html5css3.jpg')"><a href="../../mainHtml5Css3.html">HTML5/CSS3</a></li>
-        </ul>
-    </nav>
-    </header>
-    <div id="principal">
-        <h1>TIPS FOR HTML5, CSS3 & JS</h1>
-        <h3>The topics are in alphabetical order</h3>
-        <h2>JavaScript not working on the navigator (June/2020)</h2>
-        <p><span style="font-weight: bold;">Problem:</span> My HTML5 code was not creating the alert box on top of the navigator (either Google Chrome, Explorer and Edge). The results was a print on the navigator as showed on picture below:</p>
-        <img class="img-centered" id="thcjp001-002" src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem001-002.jpg"/>
-        <p><span style="font-weight: bold;">Detected Error:</span> The tag <em>&lt;script&gt;</em> was mistyped as <em>&lt;scritp&gt;</em>.</p>
-        <img class="img-centered" id="thcjp001-001" src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem001-001.jpg"/>
-        <p><span style="font-weight: bold;">Solution:</span> The tag was typed correctly as <em>&lt;script&gt;</em>.</p>
-        </main>
-        <a href="../../mainHtml5Css3.html"><img src="../../_imagens/back.png" alt="Voltar"></a>
+        <header id="cabecalho">
+            <img id="bgheader" onload ="atualizaData()" src="../../_imagens/background_header.jpg" />
+            <img id="picture" src="../../_imagens/_html5css3/html5css3.jpg" alt="languageLogo">
+            <hgroup>
+                <h1>My Devs</h1>
+                <h2 id="updatedDate"></h2>
+            </hgroup>
+            <nav id="menuflutuante">
+                <ul id="menu">
+                    <li onmouseover="mudaFoto('../../_imagens/myself.jpg')"
+                        onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a
+                            href="../../index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('../../_imagens/_python/python.jpg')"
+                        onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a
+                            href="../../mainPython.html">Python</a></li>
+                    <li onmouseover="mudaFoto('../../_imagens/_java/java.jpg')"
+                        onmouseout="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"><a
+                            href="../../mainJava.html">Java</a></li>
+                    <li onmouseover="mudaFoto('../../_imagens/_html5css3/html5css3.jpg')"
+                        onmouseout="mudaFoto(../../'_imagens/_html5css3/html5css3.jpg')"><a
+                            href="../../mainHtml5Css3.html">HTML5/CSS3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="principal">
+            <h1>HINTS FOR HTML5, CSS3 & JS</h1>
+            <h3>The topics are in alphabetical order</h3>
+            <h2>(JS) JavaScript not working on the navigator (June/2020)</h2>
+            <p><span style="font-weight: bold;">Problem:</span> My HTML5 code was not creating the alert box on top of
+                the navigator (either Google Chrome, Explorer and Edge). The results was a print on the navigator as
+                showed on picture below:</p>
+            <img class="img-centered" id="thcjp001-002"
+                src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem001-002.jpg" />
+            <p><span style="font-weight: bold;">Detected Error:</span> The tag <em>&lt;script&gt;</em> was mistyped as
+                <em>&lt;scritp&gt;</em>.</p>
+            <img class="img-centered" id="thcjp001-001"
+                src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem001-001.jpg" />
+            <p><span style="font-weight: bold;">Solution:</span> The tag was typed correctly as <em>&lt;script&gt;</em>.
+            </p>
+            <a href="../../mainHtml5Css3.html"><img src="../../_imagens/back.png" alt="Voltar"></a>
+
+            <h2>(JS) Updating the same information at many pages (June/2020)</h2>
+            <p><span style="font-weight: bold;">Problem:</span> When I was creating this site, I figured out that it was necessary to update several pages date when changes have been made on site pages.</p>
+            <p><span style="font-weight: bold;">Detected Error:</span> It was happening because the date information was hard coded on the html scripts, as showed below.</p>
+            <img class="img-centered" id="thcjp002-001"
+                src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem002-001.jpg" />
+            <p><span style="font-weight: bold;">Solution:</span> It was used a JavaScript command <b>onload</b>. A JavaScript function ("atualizaData()") was scripted in a separated file and this file was imported inside the Html script by the command:
+            <img class="img-centered" id="thcjp002-002" src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem002-002.jpg"/>
+                then the <b>onload</b> command was used inside an <b>&lt;img&gt;</b> tag that is loaded when the page is started and an <b>id</b> was assigned to the <b>&lt;h2&gt;</b> tag were the date is inserted:
+                <img class="img-centered" id="thcjp002-003" src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem002-003.jpg"/><br/>
+                <img class="img-centered" id="thcjp002-004" src="../../_imagens/_html5css3/tips-HTML5-CSS3-JS-problem002-004.jpg"/>
+            </p>
+            <p><span style="font-weight: bold;">Source(s): </span><a href="https://www.w3schools.com/jsref/event_onload.asp">https://www.w3schools.com/jsref/event_onload.asp</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onload_html">https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onload_html</a></p>
+            <a href="../../mainHtml5Css3.html"><img src="../../_imagens/back.png" alt="Voltar"></a>
+        </div>
+        <footer id="rodape">
+            <p><b>Cássio Henrique Mendonça</b></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
+                    ref="https://github.com/chmendonca" target="blank">GitHub</a></p>
+        </footer>
     </div>
-    <footer id="rodape">
-        <p><b>Cássio Henrique Mendonça</b></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/cassio-mendon%C3%A7a-57100120/" target="blank">LinkedIn</a> | <a
-                ref="https://github.com/chmendonca" target="blank">GitHub</a></p>
-    </footer>
-</div>
 </body>
 
 </html>

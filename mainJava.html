@@ -10,13 +10,13 @@
 <script language="javascript" src="_js/functions.js"></script>
 <body>
     <div id="interface">
-    <header id="cabecalho">
-        <img id="bgheader" src="_imagens/background_header.jpg" />
-        <img id="picture" src="_imagens/_java/java.jpg" alt="languageLogo">
-        <hgroup>
-        <h1>My Devs</h1>
-        <h2>Site Last Update: 2020, June 26<sup>th</sup></h2>
-    </hgroup>
+        <header id="cabecalho">
+            <img id="bgheader" onload ="atualizaData()" src="_imagens/background_header.jpg" />
+            <img id="picture" src="_imagens/_java/java.jpg" alt="languageLogo">
+            <hgroup>
+                <h1>My Devs</h1>
+                <h2 id="updatedDate"></h2>
+            </hgroup>
     <nav id="menuflutuante">
         <ul id="menu">
             <li onmouseover="mudaFoto('_imagens/myself.jpg')" onmouseout="mudaFoto('_imagens/_java/java.jpg')"><a href="index.html">Home</a></li>
@@ -31,13 +31,13 @@
         
         <h3>COURSES AND SELF DEVELOPMENT</h3>
 
-        <a href="_pages/_java/hintsJava.html"><h2>HINTS</h2></a>
+        <a href="_links/_java/hintsJava.html"><h2>HINTS</h2></a>
         <p>This part of the page is dedicated to describe the pitfalls I have found during my own developments. My intention has been to make a "help" of problems and how to solve or make a workaround on them (at least one way to solve).</p>
         
-        <a href="_pages/_java/may2020_JB.html"><h2>(MAY/2020) Java Básico</h2></a>
+        <a href="_links/_java/may2020_JB.html"><h2>(MAY/2020) Java Básico</h2></a>
         <p>This course is an introduction to the Java language.</p>
 
-        <a href="_pages/_java/jun2020_OOJ.html"><h2>(JUN/2020) Orientação a Objetos com Java</h2></a>
+        <a href="_links/_java/jun2020_OOJ.html"><h2>(JUN/2020) Orientação a Objetos com Java</h2></a>
         <p>This course is the first module of an online specialization of Instituto Técnológico de Aeronática (ITA).</p>
         
         <a href="index.html"><img src="_imagens/back.png" alt="Voltar"></a>
